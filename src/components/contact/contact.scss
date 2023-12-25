@@ -34,6 +34,8 @@
         gap: 20px;
         width: 100%;
 
+        
+
         @include mobile {
             gap:1px;
             flex:0
@@ -43,6 +45,8 @@
         @include tablet {
             flex:0
         }
+
+        
 
 
         .infoWrapper {
@@ -138,7 +142,6 @@
                 }
 
               
-                
             
                 
 
