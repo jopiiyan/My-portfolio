@@ -1,3 +1,6 @@
+@import "../../app.scss";
+
+
 .portfolio {
     position: relative;
     .progress{
@@ -8,6 +11,12 @@
         text-align: center;
         color: orange;
         font-size: 2.2rem;
+
+        h1{
+            @include mobile {
+                font-size: 3rem;
+            }
+        }
         
 
         .progressBar{
@@ -25,6 +34,8 @@
         width: 100% ;
         padding: 6rem;
 
+        
+
         .wrapper{
             height: 100%;
             margin: auto;
@@ -35,6 +46,11 @@
             justify-content: center;
             align-items: center;
 
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+            }
+
 
 
             img{
@@ -44,6 +60,10 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 1rem;
+
+                @include mobile {
+                    width: 400px;
+                }
                 
                 
             }
@@ -69,12 +89,14 @@
                     text-align: center;
                     padding-top: 6px;
                     transition: all ease-in-out 0.3s;
+                    color:white
                 
                     
                 }
 
                 a:hover{
                     background-color: white;
+                    color: black;
                    
                 }
 

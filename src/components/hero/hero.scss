@@ -3,14 +3,16 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   overflow: hidden;
   position: relative;
+  padding: 4rem;
 
   .wrapper {
     max-width: 1366px;
+    width: 100%;
     height: 100%;
     margin: auto;
-    padding-left: 9rem;
+    margin: auto;
+  
     
-
     .textContainer {
       height: 100%;
       width: 100%;
@@ -18,16 +20,20 @@
       flex-direction: column;
       justify-content: center;
       gap: 20px;
-      width: 70%;
+      width: 100%;
+      
 
       h2 {
         font-size: 2.5rem;
         letter-spacing: 0.4rem;
         color: rebeccapurple;
+       
       }
 
       h1 {
         font-size: 4rem;
+        margin-bottom: 1rem;
+       
       }
 
       .buttons{
@@ -90,5 +96,36 @@
     width: 70%;
     font-weight: 500;
     z-index: 2;
+  }
+}
+
+
+@media screen and (max-width:738px) {
+  .hero {
+      .wrapper {
+      .textContainer {
+        h2 {
+          font-size: 2rem;
+          letter-spacing: 0.4rem;
+          color: rebeccapurple;
+        }
+  
+        h1 {
+          font-size: 2rem;
+          line-height: 3rem;
+          
+        }  
+      }
+    }
+  
+    .slidingTextContainer {
+      position: absolute;
+      font-size: 50vh;
+      bottom: -110px;
+      white-space: nowrap;
+      color: #ffffff09;
+      width: 1550px;
+      
+    }
   }
 }

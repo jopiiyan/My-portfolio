@@ -50,8 +50,12 @@ const Hero = () => {
           animate="animate"
           className="textContainer"
         >
-          <motion.h2 variants={textVariants}>Jovyan</motion.h2>
-          <motion.h1 variants={textVariants}>Front-end Developer</motion.h1>
+          <motion.h2 className="name" variants={textVariants}>
+            Jovyan
+          </motion.h2>
+          <motion.h1 className="title" variants={textVariants}>
+            Front-end Developer
+          </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.a
               href="#Portfolio"
@@ -82,7 +86,7 @@ const Hero = () => {
         animate="animate"
         className="slidingTextContainer"
       >
-        React Tailwind CSS Sass
+        React Tailwind CSS Sass 
       </motion.div>
     </div>
   );

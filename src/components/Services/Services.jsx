@@ -2,6 +2,14 @@ import React, { useRef } from "react";
 import "./services.scss";
 import { easeInOut, motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import { FaHtml5, FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import {
+  SiTailwindcss,
+  SiFramer,
+  SiFramework7,
+  SiFramework,
+} from "react-icons/si";
 
 const variants = {
   initial: {
@@ -39,8 +47,8 @@ const Services = () => {
       </motion.div>
       <motion.div variants={variants} className="titleContainer">
         <div className="title">
-          <img src="/people.webp" alt="" />
-          <h1>
+          <img src="/website.svg" alt="" />
+          <h1 className="firstTitle">
             <motion.b whileHover={{ color: "orange", cursor: "pointer" }}>
               Unique
             </motion.b>{" "}
@@ -48,7 +56,7 @@ const Services = () => {
           </h1>
         </div>
         <div className="title">
-          <h1>
+          <h1 className="secondTitle">
             <motion.b
               whileHover={{
                 color: "orange",
@@ -59,49 +67,49 @@ const Services = () => {
             </motion.b>{" "}
             Websites.
           </h1>
-          <button>What I Do?</button>
         </div>
       </motion.div>
       <motion.div variants={variants} className="listContainer">
-        <div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iste
-            assumenda totam qui possimus, velit et laudantium amet quo beatae
-            libero aspernatur deleniti, ducimus quaerat earum in maiores. Eius,
-            suscipit!
-          </p>
-          <button>Go!</button>
-        </div>
-        <div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iste
-            assumenda totam qui possimus, velit et laudantium amet quo beatae
-            libero aspernatur deleniti, ducimus quaerat earum in maiores. Eius,
-            suscipit!
-          </p>
-          <button>Go!</button>
-        </div>
-        <div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iste
-            assumenda totam qui possimus, velit et laudantium amet quo beatae
-            libero aspernatur deleniti, ducimus quaerat earum in maiores. Eius,
-            suscipit!
-          </p>
-          <button>Go!</button>
-        </div>
-        <div className="box">
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iste
-            assumenda totam qui possimus, velit et laudantium amet quo beatae
-            libero aspernatur deleniti, ducimus quaerat earum in maiores. Eius,
-            suscipit!
-          </p>
-          <button>Go!</button>
+        <h1>
+          <motion.b whileHover={{ color: "orange", cursor: "pointer" }}>
+            Skills
+          </motion.b>{" "}
+          That I Possess{" "}
+        </h1>
+        <div className="iconsContainer">
+          <motion.div whileHover={{ color: "#e34c26" }}>
+            <FaHtml5 className="icons" size={60} />
+          </motion.div>
+
+          <motion.div whileHover={{ color: "#2962ff" }}>
+            {" "}
+            <FaCss3Alt className="icons" size={60}></FaCss3Alt>
+          </motion.div>
+
+          <motion.div whileHover={{ color: "#f0db4f" }}>
+            {" "}
+            <IoLogoJavascript className="icons" size={60}></IoLogoJavascript>
+          </motion.div>
+
+          <motion.div whileHover={{ color: "#1c84bc" }}>
+            {" "}
+            <FaReact className="icons" size={60}></FaReact>
+          </motion.div>
+
+          <motion.div whileHover={{ color: "#0f9ee1" }}>
+            {" "}
+            <SiTailwindcss className="icons" size={60}></SiTailwindcss>
+          </motion.div>
+
+          <motion.div whileHover={{ color: "#cc6699" }}>
+            {" "}
+            <FaSass className="icons" size={60}></FaSass>
+          </motion.div>
+
+          <motion.div whileHover={{ color: "#000000" }}>
+            {" "}
+            <SiFramer className="icons" size={60}></SiFramer>
+          </motion.div>
         </div>
       </motion.div>
     </motion.div>

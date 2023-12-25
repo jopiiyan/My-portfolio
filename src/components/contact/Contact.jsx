@@ -57,17 +57,19 @@ function Contact() {
     >
       <motion.div variants={variants} className="textContainer">
         <h1>Let's work together</h1>
-        <div className="item">
-          <h2>Mail</h2>
-          <span>hello@react.com</span>
-        </div>
-        <div className="item">
-          <h2>Address</h2>
-          <span>hello Road</span>
-        </div>
-        <div className="item">
-          <h2>Phone</h2>
-          <span>12345666</span>
+        <div className="infoWrapper">
+          <div className="item">
+            <h2>Mail</h2>
+            <span>jovyanqiu@gmail.com</span>
+          </div>
+          <div className="item">
+            <h2>Address</h2>
+            <span>Tanjungpinang, Indonesia</span>
+          </div>
+          <div className="item">
+            <h2>Phone</h2>
+            <span>083801267255</span>
+          </div>
         </div>
       </motion.div>
       <motion.div variants={variants} className="formContainer">
