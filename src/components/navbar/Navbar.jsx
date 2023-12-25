@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 import Sidebar from "../sidebar/Sidebar";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -27,6 +28,12 @@ const Navbar = () => {
           </a>
           <a href="#">
             <img src="/youtube.png" alt="" />
+          </a>
+          <a
+            href="https://github.com/jopiiyan?tab=repositories"
+            target="_blank"
+          >
+            <FaGithub></FaGithub>
           </a>
         </div>
       </div>
