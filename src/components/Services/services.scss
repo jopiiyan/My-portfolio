@@ -9,7 +9,8 @@
     justify-content: space-between;
     position: relative;
     width: 100%;
-    padding: 2rem;
+    
+   
    
    
 
@@ -26,6 +27,10 @@
             font-size: 1rem;
             color: gray;
             text-align: right;
+
+            @include tablet {
+                font-size: 0.9rem;
+            }
         }
 
         hr{
@@ -52,10 +57,9 @@
 
          @include mobile{
             margin-top: 1rem;
-            padding-left: 20pxs;
+            padding-left: 20px;
          }
        
-
 
         .title{
             display: flex;
@@ -65,7 +69,6 @@
             text-decoration: none;
             
            
-    
     
             
             img{
@@ -79,6 +82,11 @@
                     height: 100px;
                 }
 
+                @include tablet {
+                    width: 250px ;
+                   
+                }
+
                 
             }
 
@@ -86,7 +94,11 @@
                 font-weight: 100;
 
                 @include mobile{
-                    font-size:2.5rem;
+                    font-size:2.6rem;
+                }
+
+                @include tablet {
+                    font-size: 3.6rem ;
                 }
 
                 
@@ -96,7 +108,11 @@
                 font-weight: 100;
 
                 @include mobile {
-                    font-size: 3.4rem;
+                    font-size: 2.7rem;
+                }
+
+                @include tablet {
+                    font-size: 4rem;
                 }
             }
 
@@ -137,19 +153,27 @@
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       margin-top: 3rem;
-       
 
-       
+       @include tablet {
+        margin-top: 1rem;
+       }
 
+       @include mobile {
+        margin-bottom: 5rem;
+       }
 
+      
        h1{
         font-size: 4rem;
         font-weight: 300;
 
         @include mobile {
-            font-size: 3rem;
-            align-self: left;
+            font-size: 2.5rem;
+            text-align: left;
+        }
+
+        @include tablet {
+            font-size: 3.7rem;
         }
        }
 
@@ -161,7 +185,6 @@
         cursor: pointer;
 
         .icons{
-
             @include mobile {
              height: 50px;
             }

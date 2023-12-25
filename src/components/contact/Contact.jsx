@@ -74,12 +74,15 @@ function Contact() {
       </motion.div>
       <motion.div variants={variants} className="formContainer">
         <form onSubmit={sendEmail} ref={formRef} action="">
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="text" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Messages" name="message" />
-          <button>Submit</button>
-          {error && "Error"}
-          {success && "Success"}
+          <div className="div">
+            {" "}
+            <input type="text" required placeholder="Name" name="name" />
+            <input type="text" required placeholder="Email" name="email" />
+            <textarea rows={8} placeholder="Messages" name="message" />
+            <button>Submit</button>
+            {error && "Error"}
+            {success && "Success"}
+          </div>
         </form>
       </motion.div>
     </motion.div>

@@ -13,19 +13,12 @@ const items = [
 ];
 
 const Single = ({ item }) => {
-  const ref = useRef();
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
   return (
     <section>
       <div className="container">
         <div className="wrapper">
-          <img ref={ref} src={item.img} alt="" />
-          <motion.div style={{ y: y }} className="textContainer">
+          <img src={item.img} alt="" />
+          <motion.div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <a href="https://swiftvpn.netlify.app" target="_blank">

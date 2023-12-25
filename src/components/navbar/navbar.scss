@@ -1,4 +1,4 @@
-
+@import "../../app.scss";
 .navbar{
     height: 100px;
     padding-right: 10rem;
@@ -12,16 +12,29 @@
         max-width:1366px ;
         margin: auto;
         height: 100%;
+
+        @include mobile {
+            gap: 7rem;
+        }
         
         
 
         span {
             font-weight: bold;
+
+            @include mobile {
+                font-size:1.4rem;
+            }
         }
 
         .social {
             display: flex;
-            gap: 20px;
+            gap: 10px;
+            width: 100%;
+            justify-content: right;
+            align-items: center;
+            padding-right: 3rem;
+            
 
             img{
                width: 18px ;
@@ -34,12 +47,3 @@
     }
 }
     
-@media screen and (max-width:640px) {
-    .wrapper{
-        gap: 7rem;
-
-        span{
-            font-size: 1.4rem;
-        }
-    }
-}

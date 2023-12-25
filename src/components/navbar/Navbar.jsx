@@ -19,7 +19,10 @@ const Navbar = () => {
           <a href="#">
             <img src="/facebook.png" alt="" />
           </a>
-          <a href="#">
+          <a
+            href="https://www.instagram.com/jopiiyan?igsh=MTJ3NmJzbGcxbmtvaw%3D%3D&utm_source=qr"
+            target="_blank"
+          >
             <img src="/instagram.png" alt="" />
           </a>
           <a href="#">

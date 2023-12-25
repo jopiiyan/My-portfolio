@@ -13,7 +13,7 @@ import {
 
 const variants = {
   initial: {
-    y: 500,
+    y: 300,
     opacity: 0,
   },
 
@@ -22,7 +22,7 @@ const variants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.1,
-      duration: 1,
+      duration: 0.8,
     },
   },
 };
@@ -77,36 +77,57 @@ const Services = () => {
           That I Possess{" "}
         </h1>
         <div className="iconsContainer">
-          <motion.div whileHover={{ color: "#e34c26" }}>
+          <motion.div
+            whileTap={{ color: "#e34c26" }}
+            whileHover={{ color: "#e34c26" }}
+          >
             <FaHtml5 className="icons" size={60} />
           </motion.div>
 
-          <motion.div whileHover={{ color: "#2962ff" }}>
+          <motion.div
+            whileTap={{ color: "#2962ff" }}
+            whileHover={{ color: "#2962ff" }}
+          >
             {" "}
             <FaCss3Alt className="icons" size={60}></FaCss3Alt>
           </motion.div>
 
-          <motion.div whileHover={{ color: "#f0db4f" }}>
+          <motion.div
+            whileTap={{ color: "#f0db4f" }}
+            whileHover={{ color: "#f0db4f" }}
+          >
             {" "}
             <IoLogoJavascript className="icons" size={60}></IoLogoJavascript>
           </motion.div>
 
-          <motion.div whileHover={{ color: "#1c84bc" }}>
+          <motion.div
+            whileTap={{ color: "#1c84bc" }}
+            whileHover={{ color: "#1c84bc" }}
+          >
             {" "}
             <FaReact className="icons" size={60}></FaReact>
           </motion.div>
 
-          <motion.div whileHover={{ color: "#0f9ee1" }}>
+          <motion.div
+            whileTap={{ color: "#0f9ee1" }}
+            whileHover={{ color: "#0f9ee1" }}
+          >
             {" "}
             <SiTailwindcss className="icons" size={60}></SiTailwindcss>
           </motion.div>
 
-          <motion.div whileHover={{ color: "#cc6699" }}>
+          <motion.div
+            whileTap={{ color: "#cc6699" }}
+            whileHover={{ color: "#cc6699" }}
+          >
             {" "}
             <FaSass className="icons" size={60}></FaSass>
           </motion.div>
 
-          <motion.div whileHover={{ color: "#000000" }}>
+          <motion.div
+            whileTap={{ color: "#000000" }}
+            whileHover={{ color: "#000000" }}
+          >
             {" "}
             <SiFramer className="icons" size={60}></SiFramer>
           </motion.div>

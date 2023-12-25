@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero {
   height: calc(100vh - 100px);
   background: linear-gradient(180deg, #0c0c1d, #111132);
@@ -6,11 +8,15 @@
   padding: 4rem;
 
   .wrapper {
-    max-width: 1366px;
     width: 100%;
     height: 100%;
+   
     margin: auto;
-    margin: auto;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   
     
     .textContainer {
@@ -33,11 +39,20 @@
       h1 {
         font-size: 4rem;
         margin-bottom: 1rem;
+
+        @include mobile {
+          font-size: 3rem;
+        }
        
       }
 
       .buttons{
         z-index: 3;
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+        }
       }
 
 
@@ -51,6 +66,8 @@
         cursor: pointer;
         font-weight: 300;
         transition: all ease-in-out 0.3s;
+
+        
        
       }
 
@@ -93,39 +110,10 @@
     bottom: -110px;
     white-space: nowrap;
     color: #ffffff09;
-    width: 70%;
+    width: 100%;
     font-weight: 500;
     z-index: 2;
   }
 }
 
 
-@media screen and (max-width:738px) {
-  .hero {
-      .wrapper {
-      .textContainer {
-        h2 {
-          font-size: 2rem;
-          letter-spacing: 0.4rem;
-          color: rebeccapurple;
-        }
-  
-        h1 {
-          font-size: 2rem;
-          line-height: 3rem;
-          
-        }  
-      }
-    }
-  
-    .slidingTextContainer {
-      position: absolute;
-      font-size: 50vh;
-      bottom: -110px;
-      white-space: nowrap;
-      color: #ffffff09;
-      width: 1550px;
-      
-    }
-  }
-}

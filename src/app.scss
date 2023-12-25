@@ -22,23 +22,43 @@ html {
   
   section {
     height: 100vh;
-    width: 100vw;
     scroll-snap-align: center;
     overflow: hidden;
-  }
+
   
+  }
+
   @mixin mobile {
     @media (max-width: 738px) {
       @content;
     }
   }
   @mixin tablet {
-    @media (max-width: 1024px) {
+    @media (min-width: 740px) and (max-width:1300px) {
+      @content;
+    }
+  }
+  @mixin landscape {
+    @media (orientation:landscape)  {
       @content;
     }
   }
   @mixin desktop {
     @media (max-width: 1366px) {
       @content;
+    }
+  }
+
+
+  @media screen and (orientation:landscape){
+section:nth-last-child(1){
+  height: 180vh;
+}
+
+  }
+
+  @media screen and (max-width:738px){
+    section:nth-last-child(1){
+      height: 140vh;
     }
   }
