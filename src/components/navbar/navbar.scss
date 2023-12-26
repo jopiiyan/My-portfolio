@@ -9,7 +9,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width:1366px ;
         margin: auto;
         height: 100%;
 
@@ -20,6 +19,7 @@
         
 
         span {
+            font-size: 1.8rem ;
             font-weight: bold;
 
             @include mobile {

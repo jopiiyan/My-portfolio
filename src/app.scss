@@ -49,15 +49,23 @@ html {
   }
 
 
-  @media screen and (orientation:landscape) and (max-width:1240px){
+  @media screen and (orientation:landscape){
 section:nth-last-child(1){
-  height: 180vh;
+  height: 210vh;
 }
 
   }
 
   @media screen and (max-width:738px){
     section:nth-last-child(1){
-      height: 140vh;
+      height: 150vh;
     }
   }
+
+  @media screen and (min-width:740px){
+    section:nth-last-child(1){
+      height: 200vh;
+    }
+  }
+
+ 
