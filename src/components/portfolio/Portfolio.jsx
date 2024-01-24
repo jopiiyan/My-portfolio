@@ -9,6 +9,14 @@ const items = [
     title: "SwiftVPN Website",
     img: "/portfolio.jpeg",
     desc: "A VPN website which is entirely responsive and has an easy-to-use layout,so it will work and look great on any device.",
+    link: "https://swiftvpn.netlify.app",
+  },
+  {
+    id: 2,
+    title: "Mini Portfolio Website",
+    img: "/mini-portfolio.png",
+    desc: "A collection of my past mini projects",
+    link: "https://jopiiyan.github.io/Collections-of-mini-Projects/",
   },
 ];
 
@@ -21,7 +29,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <a href="https://swiftvpn.netlify.app" target="_blank">
+            <a href={item.link} target="_blank">
               See Demo
             </a>
           </motion.div>
