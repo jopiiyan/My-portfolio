@@ -56,7 +56,7 @@ function Contact() {
       className="contact"
     >
       <motion.div variants={variants} className="textContainer">
-        <h1>Let's work together</h1>
+        <h1>Contact me!</h1>
         <div className="infoWrapper">
           <div className="item">
             <h2>Mail</h2>
